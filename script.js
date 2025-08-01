@@ -97,7 +97,15 @@ document.getElementById("generate").addEventListener("click", () => {
   };
   reader.readAsDataURL(file);
 });
-
+saveCharacter({
+  name: character.name,
+  orvName: character.orvName,
+  class: character.class,
+  sponsor: character.sponsor,
+  stats: character.stats,
+  summary: generateSummary(character),
+  createdAt: new Date().toISOString()
+});
 document.getElementById("download").addEventListener("click", () => {
   const canvas = document.getElementById("card");
   html2canvas(canvas).then(canvas => {
