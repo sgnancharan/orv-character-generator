@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ORV Character Generator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📜 ORV Character Generator</h1>
+    <p class="constellation">The Constellation ‘Secretive Plotter’ is watching with interest…</p>
+    <input type="text" id="nameInput" placeholder="Enter your name" />
+    <input type="file" id="imageInput" accept="image/*" />
+    <button onclick="generateCharacter()">🔮 Generate</button>
+    <canvas id="characterCanvas" width="600" height="400"></canvas>
+    <button onclick="downloadCard()">📥 Download Card</button>
+    <h2>📂 Saved Characters</h2>
+    <div id="characterList"></div>
+  </div>
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: radial-gradient(circle at top, #000 30%, #111 100%);
+  color: #0ff;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.75);
+  border: 2px solid #0ff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #0ff;
+  text-align: center;
+}
+input[type="text"], input[type="file"] {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1em;
+  background: #111;
+  color: #0ff;
+}
+button {
+  padding: 12px 20px;
+  font-size: 1em;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #0ff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #0ff;
+}
+canvas {
+  margin-top: 20px;
+  border: 2px solid #0ff;
+  border-radius: 10px;
+  background: #000;
+}
+#characterList {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.character-card {
+  background: #111;
+  border: 1px solid #0ff;
+  padding: 15px;
+  width: 250px;
+  border-radius: 10px;
+  color: #0ff;
+}
+.character-card.blurred img {
+  filter: blur(8px);
+}
+.character-card.blurred .name {
+  filter: blur(4px);
+}
